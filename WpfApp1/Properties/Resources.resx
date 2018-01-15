@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="WebTorrent" xml:space="preserve">
+    <value>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;WebTorrent video player&lt;/title&gt;
+    &lt;style&gt;
+      #output video {
+        width: 100%;
+      }
+      #progressBar {
+          height: 5px;
+          width: 0%;
+          background-color: #35b44f;
+          transition: width .4s ease-in-out;
+      }
+      body.is-seed .show-seed {
+          display: inline;
+      }
+      body.is-seed .show-leech {
+          display: none;
+      }
+      .show-seed {
+          display: none;
+      }
+      #status code {
+          font-size: 90%;
+          font-weight: 700;
+          margin-left: 3px;
+          margin-right: 3px;
+          border-bottom: 1px dashed rgba(255,255,255,0.3);
+      }
+
+      .is-seed #hero {
+          background-color: #154820;
+          transition: .5s .5s background-color ease-in-out;
+      }
+      #hero {
+          background-color: #2a3749;
+      }
+      #status {
+          color: #fff;
+          font-size: 17px;
+          padding: 5px;
+      }
+      a:link, a:visited {
+          color: #30a247;
+          text-decoration: none;
+      }
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;div id="hero"&gt;
+      &lt;div id="output"&gt;
+        &lt;div id="progressBar"&gt;&lt;/div&gt;
+        &lt;!-- The video player will be added here --&gt;
+      &lt;/div&gt;
+      &lt;!-- Statistics --&gt;
+      &lt;div id="status"&gt;
+        &lt;div&gt;
+          &lt;span class="show-leech"&gt;Downloading &lt;/span&gt;
+          &lt;span class="show-seed"&gt;Seeding &lt;/span&gt;
+          &lt;code&gt;
+            &lt;!-- Informative link to the torrent file --&gt;
+            &lt;a id="torrentLink" href="{magnet}"&gt;{name}&lt;/a&gt;
+          &lt;/code&gt;
+          &lt;span class="show-leech"&gt; from &lt;/span&gt;
+          &lt;span class="show-seed"&gt; to &lt;/span&gt;
+          &lt;code id="numPeers"&gt;0 peers&lt;/code&gt;.
+        &lt;/div&gt;
+        &lt;div&gt;
+          &lt;code id="downloaded"&gt;&lt;/code&gt;
+          of &lt;code id="total"&gt;&lt;/code&gt;
+          — &lt;span id="remaining"&gt;&lt;/span&gt;&lt;br/&gt;
+          &amp;#x2198;&lt;code id="downloadSpeed"&gt;0 b/s&lt;/code&gt;
+          / &amp;#x2197;&lt;code id="uploadSpeed"&gt;0 b/s&lt;/code&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Include the latest version of WebTorrent --&gt;
+    &lt;script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"&gt;&lt;/script&gt;
+
+    &lt;!-- Moment is used to show a human-readable remaining time --&gt;
+    &lt;script src="http://momentjs.com/downloads/moment.min.js"&gt;&lt;/script&gt;
+
+    &lt;script&gt;
+      var torrentId = '{magnet}'
+
+      var client = new WebTorrent()
+
+      // HTML elements
+      var $body = document.body
+      var $progressBar = document.querySelector('#progressBar')
+      var $numPeers = document.querySelector('#numPeers')
+      var $downloaded = document.querySelector('#downloaded')
+      var $total = document.querySelector('#total')
+      var $remaining = document.querySelector('#remaining')
+      var $uploadSpeed = document.querySelector('#uploadSpeed')
+      var $downloadSpeed = document.querySelector('#downloadSpeed')
+
+      // Download the torrent
+      client.add(torrentId, function (torrent) {
+
+        // Torrents can contain many files. Let's use the .mp4 file
+        var file = torrent.files.find(function (file) {
+          return file.name.endsWith('.mp4')
+        })
+
+        // Stream the file in the browser
+        file.appendTo('#output')
+
+        // Trigger statistics refresh
+        torrent.on('done', onDone)
+        setInterval(onProgress, 500)
+        onProgress()
+
+        // Statistics
+        function onProgress () {
+          // Peers
+          $numPeers.innerHTML = torrent.numPeers + (torrent.numPeers === 1 ? ' peer' : ' peers')
+
+          // Progress
+          var percent = Math.round(torrent.progress * 100 * 100) / 100
+          $progressBar.style.width = percent + '%'
+          $downloaded.innerHTML = prettyBytes(torrent.downloaded)
+          $total.innerHTML = prettyBytes(torrent.length)
+
+          // Remaining time
+          var remaining
+          if (torrent.done) {
+            remaining = 'Done.'
+          } else {
+            remaining = moment.duration(torrent.timeRemaining / 1000, 'seconds').humanize()
+            remaining = remaining[0].toUpperCase() + remaining.substring(1) + ' remaining.'
+          }
+          $remaining.innerHTML = remaining
+
+          // Speed rates
+          $downloadSpeed.innerHTML = prettyBytes(torrent.downloadSpeed) + '/s'
+          $uploadSpeed.innerHTML = prettyBytes(torrent.uploadSpeed) + '/s'
+        }
+        function onDone () {
+          $body.className += ' is-seed'
+          onProgress()
+        }
+      })
+
+      // Human readable bytes util
+      function prettyBytes(num) {
+        var exponent, unit, neg = num &lt; 0, units = ['B', 'kB', 'MB', 'GB', 'TB', 'PB', 'EB', 'ZB', 'YB']
+        if (neg) num = -num
+        if (num &lt; 1) return (neg ? '-' : '') + num + ' B'
+        exponent = Math.min(Math.floor(Math.log(num) / Math.log(1000)), units.length - 1)
+        num = Number((num / Math.pow(1000, exponent)).toFixed(2))
+        unit = units[exponent]
+        return (neg ? '-' : '') + num + ' ' + unit
+      }
+    &lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</value>
+  </data>
+</root>
