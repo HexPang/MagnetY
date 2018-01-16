@@ -4,4 +4,6 @@
 
 > 这个是Windows下的磁力链搜索工具
 
-### 在线播放未完成，需要安装[WebTorrent](https://github.com/webtorrent/webtorrent)（晚些时候补图）
+### 在线播放未完成，需要安装[WebTorrent](https://github.com/webtorrent/webtorrent)
+
+![Screenshot](Screenshot.png)
