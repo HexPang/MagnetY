@@ -1,4 +1,4 @@
-﻿using MahApps.Metro.Controls;
+using MahApps.Metro.Controls;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
@@ -6,6 +6,7 @@ using MahApps.Metro.Controls.Dialogs;
 using System;
 using System.Windows.Resources;
 using System.IO;
+using Microsoft.Win32;
 
 namespace WpfApp1
 {
@@ -71,10 +72,18 @@ namespace WpfApp1
         {
             Button btn = sender as Button;
             string magnet = btn.Tag as string;
-            string template = File.ReadAllText(@"res\WebTorrent.txt").Replace("{magnet}", magnet).Replace("{name}", magnet);
-            //webView.NavigateToString(template);
-            File.WriteAllText("player.html", template);
-            System.Diagnostics.Process.Start("explorer.exe", "player.html");
+            RegistryKey hklm = Registry.CurrentUser;
+            RegistryKey hkSoftWare = hklm.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Uninstall\WebTorrent", true);
+            if(hkSoftWare == null)
+            {
+                MessageBox.Show("没有找到WebTorrent Desktop安装信息，请确定电脑上已安装。", "提示", MessageBoxButton.OK, MessageBoxImage.Error);
+                return;
+            }
+            string installDir = hkSoftWare.GetValue("InstallLocation").ToString();
+
+            hklm.Close();
+            hkSoftWare.Close();
+            System.Diagnostics.Process.Start(installDir + "\\WebTorrent.exe", magnet);
         }
     }
 }
