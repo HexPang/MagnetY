@@ -4,4 +4,4 @@
 
 ### 在线播放需要安装[WebTorrent Desktop](https://webtorrent.io/desktop/)
 
-![Screenshot](Screenshot-0.1.png)
+![Screenshot](Screenshot-0.2.png)
