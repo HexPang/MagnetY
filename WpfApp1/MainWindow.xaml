@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
         xmlns:local="clr-namespace:WpfApp1"
-                      mc:Ignorable="d" Title="MainWindow" Height="350" Width="786.756">
+                      mc:Ignorable="d" Title="MagnetY" Height="350" Width="786.756">
     <Grid>
         <Button Content="更新配置" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <TextBox x:Name="keyword" Margin="90,10,89,0" VerticalAlignment="Top" Height="27" Text="生活大爆炸"/>
@@ -25,7 +25,7 @@
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
                                                 <Button Content="复制链接" Tag="{Binding magnet}" Click="Button_Click_1"></Button>
-                                                <Button Content="在线播放(WIP)" Tag="{Binding magnet}" Click="Button_Click_3"></Button>
+                                                <!-- <Button Content="在线播放(WIP)" Tag="{Binding magnet}" Click="Button_Click_3"></Button> -->
                                             </StackPanel>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
