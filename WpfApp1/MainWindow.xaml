@@ -25,7 +25,7 @@
                                         <DataTemplate>
                                             <StackPanel Orientation="Horizontal">
                                                 <Button Content="复制链接" Tag="{Binding magnet}" Click="Button_Click_1"></Button>
-                                                <!-- <Button Content="在线播放(WIP)" Tag="{Binding magnet}" Click="Button_Click_3"></Button> -->
+                                                <Button Content="在线播放" Tag="{Binding magnet}" Click="Button_Click_3"></Button>
                                             </StackPanel>
                                         </DataTemplate>
                                     </GridViewColumn.CellTemplate>
